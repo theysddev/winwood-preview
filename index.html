@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WINWOOD — макет главной страницы</title>
+<meta name="description" content="Два варианта первого экрана нового интернет-магазина WINWOOD: паркет собственного производства, ламинат, обои, краска, плинтус и молдинги.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="WINWOOD — макет главной страницы">
+<meta property="og:description" content="Два варианта первого экрана интернет-магазина. Прототип для согласования.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://winwoodmsk.ru/image/catalog/image_new/galereja_rabot/1(16).jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231E1C19'/%3E%3Cpath d='M19 20h8l5 15 5-15h8L35 46h-6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://winwoodmsk.ru">
+<link rel="preload" as="font" type="font/woff2" href="tenor-sans-cyrillic-400-normal.woff2" crossorigin>
+<link rel="preload" as="image" href="https://winwoodmsk.ru/image/catalog/image_new/galereja_rabot/1(16).jpg" fetchpriority="high">
+<style>
+@font-face{font-family:'Tenor Sans';font-style:normal;font-weight:400;font-display:swap;src:url(tenor-sans-cyrillic-400-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Tenor Sans';font-style:normal;font-weight:400;font-display:swap;src:url(tenor-sans-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Golos Text';font-style:normal;font-weight:400;font-display:swap;src:url(golos-text-cyrillic-400-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Golos Text';font-style:normal;font-weight:400;font-display:swap;src:url(golos-text-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Golos Text';font-style:normal;font-weight:500;font-display:swap;src:url(golos-text-cyrillic-500-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Golos Text';font-style:normal;font-weight:500;font-display:swap;src:url(golos-text-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Golos Text';font-style:normal;font-weight:600;font-display:swap;src:url(golos-text-cyrillic-600-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Golos Text';font-style:normal;font-weight:600;font-display:swap;src:url(golos-text-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Commissioner';font-style:normal;font-weight:400;font-display:swap;src:url(commissioner-cyrillic-400-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Commissioner';font-style:normal;font-weight:400;font-display:swap;src:url(commissioner-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Commissioner';font-style:normal;font-weight:500;font-display:swap;src:url(commissioner-cyrillic-500-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Commissioner';font-style:normal;font-weight:500;font-display:swap;src:url(commissioner-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Commissioner';font-style:normal;font-weight:600;font-display:swap;src:url(commissioner-cyrillic-600-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Commissioner';font-style:normal;font-weight:600;font-display:swap;src:url(commissioner-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Commissioner';font-style:normal;font-weight:700;font-display:swap;src:url(commissioner-cyrillic-700-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Commissioner';font-style:normal;font-weight:700;font-display:swap;src:url(commissioner-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;background:#fff}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:root{--ease:cubic-bezier(.23,1,.32,1);--gut:clamp(16px,4vw,56px)}
+.variant{padding-bottom:120px;transition:opacity .18s ease-out}
+.variant.leaving{opacity:0}
+.variant[hidden]{display:none}
+.icon{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+/* entrance: one orchestrated moment per variant */
+[data-in]{opacity:0;transform:translateY(14px)}
+.is-in [data-in]{opacity:1;transform:none;transition:opacity .7s var(--ease) calc(var(--d,0)*70ms),transform .7s var(--ease) calc(var(--d,0)*70ms)}
+[data-in="photo"]{transform:scale(1.035)}
+
+/* =========================  ВАРИАНТ 1 · ШОУРУМ  ========================= */
+.va{--bg:#FAFAF7;--stone:#ECE9E2;--ink:#1E1C19;--muted:#5D584F;--oak:#7A5A3A;--line:#DDD8CE;
+  background:var(--bg);color:var(--ink);font-family:'Golos Text',system-ui,sans-serif;font-size:16px;line-height:1.5;min-height:100vh}
+.va .serif{font-family:'Tenor Sans',Georgia,serif;font-weight:400}
+.a-head{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:clamp(16px,3vw,40px);height:76px;padding:0 var(--gut);background:rgba(250,250,247,.86);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .2s ease}
+.a-head.scrolled{border-bottom-color:var(--line)}
+.logo{display:flex;align-items:center;flex:none}
+.logo img{height:36px;width:auto;mix-blend-mode:multiply}
+.a-nav{display:flex;gap:28px;font-size:15px}
+.a-nav a{padding:10px 0;color:var(--ink);position:relative}
+.a-nav a::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .25s var(--ease)}
+@media (hover:hover) and (pointer:fine){.a-nav a:hover::after{transform:scaleX(1)}}
+.a-tools{margin-left:auto;display:flex;align-items:center;gap:6px}
+.a-phone{font-size:15px;font-weight:500;margin-right:10px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.ibtn{position:relative;display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;transition:background-color .15s ease}
+@media (hover:hover) and (pointer:fine){.va .ibtn:hover{background:var(--stone)}}
+.count{position:absolute;top:6px;right:4px;min-width:17px;height:17px;padding:0 4px;border-radius:9px;font-size:11px;line-height:17px;text-align:center;font-weight:600;background:var(--ink);color:#fff}
+.a-burger{display:none}
+
+.a-hero{display:grid;grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);gap:clamp(28px,4.5vw,72px);padding:clamp(28px,4vw,56px) var(--gut) 0;align-items:stretch}
+.a-copy{display:flex;flex-direction:column;justify-content:space-between;gap:36px;padding-bottom:8px}
+.a-copy h1{font-family:'Tenor Sans',Georgia,serif;font-weight:400;font-size:clamp(40px,4.4vw,70px);line-height:1.04;letter-spacing:-.018em;margin:0;max-width:15ch;text-wrap:balance}
+.a-lead{font-size:clamp(16px,1.25vw,18px);line-height:1.6;color:var(--muted);max-width:44ch;margin:22px 0 0}
+.a-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.abtn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;border-radius:2px;font-size:16px;font-weight:500;transition:background-color .15s ease,color .15s ease,transform .12s ease}
+.abtn:active{transform:scale(.97)}
+.abtn-dark{background:var(--ink);color:#fff}
+.abtn-line{box-shadow:inset 0 0 0 1px var(--ink)}
+@media (hover:hover) and (pointer:fine){.abtn-dark:hover{background:#3A352F}.abtn-line:hover{background:var(--ink);color:#fff}}
+
+.a-spec{border-collapse:collapse;width:100%;max-width:520px;font-size:15px}
+.a-spec caption{text-align:left;font-family:'Tenor Sans',Georgia,serif;font-size:19px;padding-bottom:10px}
+.a-spec td{padding:11px 0;border-top:1px solid var(--line);vertical-align:baseline}
+.a-spec tr:last-child td{border-bottom:1px solid var(--line)}
+.a-spec td:last-child{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:16px}
+
+.a-photo{position:relative;margin:0;min-height:clamp(440px,calc(100svh - 150px),780px);overflow:hidden;border-radius:3px;background:var(--stone)}
+.a-photo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.a-photo figcaption{position:absolute;right:14px;top:14px;font-size:12px;padding:6px 10px;border-radius:2px;background:rgba(250,250,247,.9);color:var(--muted)}
+.a-tag{position:absolute;left:clamp(14px,2vw,24px);bottom:clamp(14px,2vw,24px);display:flex;gap:14px;align-items:center;padding:10px 18px 10px 10px;background:rgba(250,250,247,.95);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-radius:3px;max-width:calc(100% - 28px)}
+.a-tag img{width:64px;height:64px;object-fit:cover;border-radius:2px;flex:none}
+.a-tag b{display:block;font-family:'Tenor Sans',Georgia,serif;font-weight:400;font-size:17px;line-height:1.25}
+.a-tag span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+
+.a-cats{padding:clamp(56px,7vw,96px) var(--gut) 0}
+.a-cats-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:24px}
+.a-cats h2{font-family:'Tenor Sans',Georgia,serif;font-weight:400;font-size:clamp(28px,2.6vw,40px);line-height:1.1;margin:0}
+.a-cats-head a{font-size:15px;border-bottom:1px solid var(--line);padding-bottom:2px}
+.a-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(10px,1.4vw,20px);list-style:none;margin:0;padding:0}
+.a-grid a{display:block}
+.a-grid .ph{aspect-ratio:3/4;overflow:hidden;border-radius:2px;background:var(--stone);position:relative}
+.a-grid .ph svg{width:100%;height:100%;display:block}
+.a-grid .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+@media (hover:hover) and (pointer:fine){.a-grid a:hover .ph img{transform:scale(1.04)}}
+.a-grid .nm{display:block;font-family:'Tenor Sans',Georgia,serif;font-size:19px;margin-top:12px}
+.a-grid .own{position:absolute;left:10px;top:10px;font-size:12px;padding:5px 9px;background:var(--bg);border-radius:2px}
+
+@media (max-width:1100px){.a-nav{display:none}.a-burger{display:inline-grid}}
+@media (max-width:860px){
+  .a-head{height:64px}
+  .logo img{height:30px}
+  .a-phone{display:none}
+  .a-hero{grid-template-columns:1fr;gap:28px}
+  .a-copy{display:contents}
+  .a-copy>div{order:1}
+  .a-photo{order:2;min-height:auto;aspect-ratio:3/2}
+  .a-spec{order:3;max-width:none}
+  .a-copy h1{max-width:14ch}
+  .a-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(var(--gut)*-1);padding:0 var(--gut);scrollbar-width:none}
+  .a-grid::-webkit-scrollbar{display:none}
+  .a-grid li{flex:0 0 58vw;max-width:260px;scroll-snap-align:start}
+}
+@media (max-width:480px){
+  .a-tools .hide-s{display:none}
+  .abtn{width:100%}
+  .a-photo{aspect-ratio:4/5}
+  .a-tag img{width:52px;height:52px}
+}
+
+/* =========================  ВАРИАНТ 2 · КАТАЛОГ  ========================= */
+.vb{--bg:#FFFFFF;--panel:#F1F2EF;--ink:#17201B;--muted:#56605A;--green:#1F4D3B;--green-d:#163A2C;--mint:#E2EBE5;--line:#E1E4E0;
+  background:var(--bg);color:var(--ink);font-family:'Commissioner',system-ui,sans-serif;font-size:16px;line-height:1.5;min-height:100vh}
+.b-top{background:var(--panel);font-size:13px;color:var(--muted)}
+.b-top .in{display:flex;align-items:center;gap:24px;height:38px;padding:0 var(--gut)}
+.b-top a{padding:8px 0}
+.b-top .r{margin-left:auto;display:flex;gap:18px;align-items:center}
+.b-top .tel{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+.b-head{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .2s ease}
+.b-head.scrolled{border-bottom-color:var(--line)}
+.b-row{display:flex;align-items:center;gap:16px;height:80px;padding:0 var(--gut)}
+.b-catbtn{display:inline-flex;align-items:center;gap:10px;height:50px;padding:0 20px;border-radius:10px;background:var(--green);color:#fff;font-weight:600;flex:none;transition:background-color .15s ease,transform .12s ease}
+.b-catbtn:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.b-catbtn:hover{background:var(--green-d)}}
+.b-search{flex:1;position:relative;min-width:0}
+.b-search input{width:100%;height:50px;border-radius:10px;border:1px solid var(--line);background:var(--panel);padding:0 52px 0 48px;font:inherit;font-size:15px;color:var(--ink);transition:border-color .15s ease,background-color .15s ease}
+.b-search input::placeholder{color:#6E7771}
+.b-search input:focus{outline:none;border-color:var(--green);background:#fff}
+.b-search .icon{position:absolute;left:16px;top:14px;color:var(--muted)}
+.b-search kbd{position:absolute;right:10px;top:11px;height:28px;padding:0 9px;border-radius:6px;background:#fff;border:1px solid var(--line);font:500 13px/26px 'Commissioner',sans-serif;color:var(--muted)}
+.b-acts{display:flex;gap:4px;flex:none}
+.b-act{position:relative;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:64px;padding:6px 4px;border-radius:10px;font-size:12px;color:var(--muted);transition:background-color .15s ease}
+.b-act .icon{color:var(--ink)}
+@media (hover:hover) and (pointer:fine){.b-act:hover{background:var(--panel)}}
+.b-act .count{top:2px;right:12px;background:var(--green)}
+.b-nav{display:flex;gap:6px;padding:0 var(--gut) 12px;overflow-x:auto;scrollbar-width:none}
+.b-nav::-webkit-scrollbar{display:none}
+.b-nav a{flex:none;padding:9px 14px;border-radius:999px;font-size:15px;font-weight:500;transition:background-color .15s ease}
+@media (hover:hover) and (pointer:fine){.b-nav a:hover{background:var(--panel)}}
+.b-nav .sale{color:var(--green);font-weight:600}
+
+.b-hero{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:16px;padding:8px var(--gut) 0}
+.b-show{position:relative;min-height:clamp(420px,58vh,540px);border-radius:16px;overflow:hidden;background:var(--panel);display:flex;align-items:flex-end}
+.b-show>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 70%}
+.b-card{position:relative;margin:clamp(14px,2.2vw,28px);padding:clamp(22px,2.6vw,34px);background:#fff;border-radius:12px;max-width:520px}
+.b-card h1{font-weight:700;font-size:clamp(28px,3vw,42px);line-height:1.08;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.b-card p{color:var(--muted);margin:14px 0 0;max-width:42ch}
+.b-card .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.bbtn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border-radius:10px;font-weight:600;white-space:nowrap;transition:background-color .15s ease,transform .12s ease}
+.bbtn:active{transform:scale(.97)}
+.bbtn-g{background:var(--green);color:#fff}
+.bbtn-s{background:var(--panel)}
+@media (hover:hover) and (pointer:fine){.bbtn-g:hover{background:var(--green-d)}.bbtn-s:hover{background:var(--line)}}
+.b-side{display:grid;grid-template-rows:1fr 1fr;gap:16px}
+.b-tile{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);border-radius:16px;overflow:hidden;background:var(--panel);min-height:200px}
+.b-tile.mint{background:var(--mint)}
+.b-tile .tx{padding:22px 18px 22px 22px;display:flex;flex-direction:column;justify-content:space-between;gap:12px}
+.b-tile b{display:block;font-size:19px;line-height:1.2;font-weight:700;letter-spacing:-.01em}
+.b-tile span{display:block;font-size:14px;color:var(--muted);margin-top:6px}
+.b-tile em{font-style:normal;font-size:14px;font-weight:600;color:var(--green)}
+.b-tile .im{position:relative;overflow:hidden}
+.b-tile .im svg{position:absolute;inset:0;width:100%;height:100%}
+.b-tile .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+@media (hover:hover) and (pointer:fine){.b-tile:hover .im img{transform:scale(1.04)}}
+
+.b-sec{padding:clamp(44px,5vw,72px) var(--gut) 0}
+.b-sec h2{font-size:clamp(24px,2.2vw,32px);font-weight:700;letter-spacing:-.015em;line-height:1.15;margin:0 0 20px}
+.b-cats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;list-style:none;margin:0;padding:0}
+.b-cats a{display:block;border-radius:14px;padding:10px 10px 14px;background:var(--panel);height:100%;transition:background-color .15s ease}
+@media (hover:hover) and (pointer:fine){.b-cats a:hover{background:var(--line)}.b-cats a:hover img{transform:scale(1.04)}}
+.b-cats .ph{aspect-ratio:1;border-radius:10px;overflow:hidden;background:#fff}
+.b-cats .ph svg{width:100%;height:100%;display:block}
+.b-cats img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.b-cats .nm{display:block;font-weight:600;font-size:16px;margin:12px 4px 0}
+.b-cats .sub{display:block;font-size:13px;color:var(--muted);margin:2px 4px 0}
+.b-plus{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;list-style:none;margin:0;padding:clamp(40px,4.5vw,64px) var(--gut) 0}
+.b-plus li{border-top:2px solid var(--ink);padding-top:16px}
+.b-plus b{display:block;font-size:17px;font-weight:700;line-height:1.25}
+.b-plus span{display:block;font-size:14px;color:var(--muted);margin-top:6px;max-width:30ch}
+
+@media (max-width:1100px){
+  .b-cats{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .b-acts .lbl{display:none}.b-act{min-width:46px}
+  .b-plus{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  .b-top{display:none}
+  .b-row{flex-wrap:wrap;height:auto;padding-top:10px;padding-bottom:10px;gap:10px}
+  .b-row .logo{margin-right:auto}
+  .b-search{order:3;flex:1 0 100%}
+  .b-catbtn .lbl{display:none}.b-catbtn{width:50px;padding:0;justify-content:center;order:4;display:none}
+  .b-hero{grid-template-columns:1fr}
+  .b-show{min-height:auto;flex-direction:column;align-items:stretch}
+  .b-show>img{position:relative;height:240px}
+  .b-card{margin:0;border-radius:0 0 16px 16px;max-width:none;background:var(--panel)}
+  .b-side{grid-template-rows:none}
+}
+@media (max-width:480px){
+  .b-cats{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .b-plus{grid-template-columns:1fr;gap:18px}
+  .b-tile{min-height:170px}
+  .bbtn-g{flex:1}
+  .b-search kbd{display:none}
+}
+
+/* =========================  ПЕРЕКЛЮЧАТЕЛЬ  ========================= */
+.switch{position:fixed;left:50%;bottom:max(14px,env(safe-area-inset-bottom));transform:translateX(-50%);z-index:100;width:max-content;display:flex;align-items:center;gap:14px;padding:6px 6px 6px 18px;background:#1E1C19;color:#fff;border-radius:14px;box-shadow:0 10px 30px rgba(20,18,15,.28);font-family:'Golos Text',system-ui,sans-serif;max-width:calc(100% - 24px)}
+.switch .note{font-size:13px;line-height:1.3;color:#C9C4BB;max-width:270px}
+.switch .note b{display:block;color:#fff;font-weight:500}
+.seg{display:flex;background:#33302B;border-radius:10px;padding:3px;flex:none}
+.seg button{min-height:44px;padding:0 16px;border-radius:8px;font-size:14px;font-weight:500;color:#D8D3CA;transition:background-color .15s ease,color .15s ease;white-space:nowrap}
+.seg button[aria-pressed="true"]{background:#fff;color:#1E1C19}
+.seg button small{font-size:12px;opacity:.7;margin-left:6px;font-weight:400}
+@media (max-width:640px){.switch{padding:5px;gap:0}.switch .note{display:none}.seg button small{display:none}}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  [data-in],[data-in="photo"]{opacity:1;transform:none}
+  .is-in [data-in]{transition:none}
+  .variant{transition:none}
+  .a-grid .ph img,.b-tile .im img,.b-cats img,.a-nav a::after{transition:none}
+  .abtn,.bbtn,.b-catbtn,.ibtn,.b-act,.b-nav a,.seg button,.b-search input,.a-head,.b-head{transition:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<linearGradient id="ww-sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".10"/></linearGradient>
+<pattern id="ww-wp" width="38" height="54" patternUnits="userSpaceOnUse"><rect width="38" height="54" fill="#E9E3D8"/><path d="M5 54V25a14 14 0 0 1 28 0v29" fill="none" stroke="#B3A68F" stroke-width="1.6"/><path d="M12 54V27a7 7 0 0 1 14 0v27" fill="none" stroke="#CFC5B4" stroke-width="1"/><circle cx="19" cy="8" r="1.8" fill="#B3A68F"/></pattern>
+<pattern id="ww-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0V6" stroke="#2A2620" stroke-opacity=".35" stroke-width="1"/></pattern>
+<pattern id="ww-floor" width="150" height="32" patternUnits="userSpaceOnUse"><rect width="150" height="32" fill="#BBA889"/><rect y="16" width="150" height="16" fill="#C3B193"/><path d="M0 15.5H150M0 31.5H150M92 0v16M30 16v16M118 16v16" stroke="#7C6A50" stroke-opacity=".45"/><path d="M8 6q34 -1.5 70 0M40 24q30 1.5 66 0" stroke="#8C7657" stroke-opacity=".3" fill="none"/></pattern>
+</defs></svg>
+
+<!-- ======================= ВАРИАНТ 1 ======================= -->
+<div class="variant va" id="v1" data-variant="1">
+  <header class="a-head" data-head>
+    <a class="logo" href="#" aria-label="WINWOOD, на главную"><img src="https://winwoodmsk.ru/image/catalog/11111hh.png" width="180" height="57" alt="WINWOOD"></a>
+    <nav class="a-nav" aria-label="Основное меню">
+      <a href="#">Каталог</a><a href="#">Производство</a><a href="#">Галерея работ</a><a href="#">Доставка и оплата</a><a href="#">Контакты</a>
+    </nav>
+    <div class="a-tools">
+      <a class="a-phone" href="tel:+79037475222">+7 (903) 747-52-22</a>
+      <button class="ibtn" type="button" aria-label="Поиск по каталогу"><svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+      <button class="ibtn hide-s" type="button" aria-label="Избранное"><svg class="icon" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z"/></svg></button>
+      <button class="ibtn" type="button" aria-label="Корзина, 0 товаров"><svg class="icon" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="count">0</span></button>
+      <button class="ibtn a-burger" type="button" aria-label="Открыть меню"><svg class="icon" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="a-hero">
+      <div class="a-copy">
+        <div>
+          <h1 data-in style="--d:1">Пол из дуба и&nbsp;всё, что к&nbsp;нему подходит</h1>
+          <p class="a-lead" data-in style="--d:2">WINWOOD 15&nbsp;лет производит паркет и&nbsp;инженерную доску. Теперь здесь&nbsp;же ламинат, обои, краска, плинтус и&nbsp;молдинги, чтобы собрать отделку комнаты в&nbsp;одном заказе.</p>
+          <div class="a-cta" data-in style="--d:3">
+            <a class="abtn abtn-dark" href="#">Смотреть каталог</a>
+            <a class="abtn abtn-line" href="#">Подобрать плинтус и краску</a>
+          </div>
+        </div>
+        <table class="a-spec" data-in style="--d:4">
+          <caption>Своё производство</caption>
+          <tbody>
+            <tr><td>Французская и английская ёлочка</td><td>12 и 15 мм</td></tr>
+            <tr><td>Инженерная доска</td><td>12, 15 и 20,5 мм</td></tr>
+            <tr><td>Массивная доска</td><td>16 мм</td></tr>
+            <tr><td>Оттенков в линейке</td><td>более 600</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <figure class="a-photo" data-in="photo" style="--d:0">
+        <img src="https://winwoodmsk.ru/image/catalog/image_new/galereja_rabot/1(16).jpg" width="1280" height="853" alt="Спальня с полом и стеновыми панелями из дуба" fetchpriority="high">
+        <figcaption>Из галереи работ WINWOOD</figcaption>
+        <div class="a-tag">
+          <img src="https://winwoodmsk.ru/image/cache/catalog/image_new/galereja_rabot/1(1)-666x500.jpeg" width="64" height="64" alt="">
+          <div><b>Французская ёлочка</b><span>Ширина 100, 120 и 125 мм</span></div>
+        </div>
+      </figure>
+    </section>
+
+    <section class="a-cats" aria-labelledby="a-cats-h">
+      <div class="a-cats-head">
+        <h2 id="a-cats-h">Каталог</h2>
+        <a href="#">Все разделы</a>
+      </div>
+      <ul class="a-grid">
+        <li><a href="#"><div class="ph"><img loading="lazy" src="https://winwoodmsk.ru/image/cache/catalog/image_new/galereja_rabot/1(1)-666x500.jpeg" width="520" height="693" alt="Паркет ёлочкой из дуба"><span class="own">Своё производство</span></div><span class="nm">Паркет</span></a></li>
+        <li><a href="#"><div class="ph"><svg class="art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ламинат, рисунок до фото" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#C4B193"/><rect x="-61" y="0" width="129" height="31" fill="#B9A688"/><path d="M-57 7.4 q43 0.2 86 -0.1 t35 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-57 12.9 q43 -1.9 86 1.0 t35 -1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M68 0v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="68" y="0" width="174" height="31" fill="#BFAC8E"/><path d="M72 7.6 q58 -0.4 116 0.2 t50 -0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M72 10.6 q58 0.2 116 -0.1 t50 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M242 0v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="242" y="0" width="117" height="31" fill="#C6B396"/><path d="M246 24.0 q39 0.6 78 -0.3 t31 0.3" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M246 17.1 q39 -1.9 78 1.0 t31 -1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M359 0v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 31H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-94" y="31" width="160" height="31" fill="#CBB99D"/><path d="M-90 37.9 q53 1.6 107 -0.8 t45 0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-90 42.5 q53 -1.6 107 0.8 t45 -0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M66 31v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="66" y="31" width="125" height="31" fill="#C6B396"/><path d="M70 47.6 q42 0.8 83 -0.4 t34 0.4" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M70 39.0 q42 0.3 83 -0.2 t34 0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M70 40.6 q42 -1.8 83 0.9 t34 -0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M191 31v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="191" y="31" width="118" height="31" fill="#C6B396"/><path d="M195 48.8 q39 -0.0 79 0.0 t31 -0.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M195 47.1 q39 1.2 79 -0.6 t31 0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M309 31v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 62H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-79" y="62" width="184" height="31" fill="#B9A688"/><path d="M-75 73.7 q61 1.3 123 -0.6 t53 0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-75 81.3 q61 -1.1 123 0.6 t53 -0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-75 78.9 q61 0.1 123 -0.1 t53 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M105 62v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="105" y="62" width="153" height="31" fill="#D0BEA2"/><path d="M109 73.5 q51 2.1 102 -1.1 t43 1.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M109 70.2 q51 -0.4 102 0.2 t43 -0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M109 82.4 q51 -1.5 102 0.8 t43 -0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M258 62v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="258" y="62" width="172" height="31" fill="#B9A688"/><path d="M262 86.3 q57 -1.9 115 0.9 t49 -0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M262 78.6 q57 1.3 115 -0.6 t49 0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M430 62v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 93H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-60" y="93" width="153" height="31" fill="#D0BEA2"/><path d="M-56 110.3 q51 0.4 102 -0.2 t43 0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-56 107.7 q51 1.5 102 -0.7 t43 0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-56 116.9 q51 -0.1 102 0.1 t43 -0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M93 93v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="93" y="93" width="118" height="31" fill="#CBB99D"/><path d="M97 111.3 q39 2.2 79 -1.1 t31 1.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M97 114.6 q39 -0.9 79 0.5 t31 -0.5" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M97 106.3 q39 0.7 79 -0.4 t31 0.4" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M211 93v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="211" y="93" width="112" height="31" fill="#B9A688"/><path d="M215 102.2 q37 -1.7 75 0.8 t29 -0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M215 100.1 q37 1.2 75 -0.6 t29 0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M215 101.5 q37 -1.1 75 0.6 t29 -0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M323 93v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 124H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-70" y="124" width="173" height="31" fill="#CBB99D"/><path d="M-66 138.5 q58 0.2 115 -0.1 t50 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-66 146.8 q58 1.4 115 -0.7 t50 0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M103 124v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="103" y="124" width="180" height="31" fill="#D3C3A8"/><path d="M107 148.7 q60 0.8 120 -0.4 t52 0.4" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M107 137.2 q60 -1.2 120 0.6 t52 -0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M107 131.6 q60 -1.5 120 0.8 t52 -0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M283 124v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="283" y="124" width="139" height="31" fill="#CBB99D"/><path d="M287 145.8 q46 -1.4 93 0.7 t38 -0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M287 135.4 q46 -1.6 93 0.8 t38 -0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M287 140.2 q46 0.5 93 -0.2 t38 0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M422 124v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 155H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-60" y="155" width="126" height="31" fill="#D0BEA2"/><path d="M-56 169.7 q42 1.6 84 -0.8 t34 0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-56 179.1 q42 0.8 84 -0.4 t34 0.4" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M66 155v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="66" y="155" width="181" height="31" fill="#B9A688"/><path d="M70 168.6 q60 -1.7 121 0.9 t52 -0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M70 173.1 q60 -1.9 121 1.0 t52 -1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M70 162.3 q60 -1.3 121 0.6 t52 -0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M247 155v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="247" y="155" width="130" height="31" fill="#CBB99D"/><path d="M251 172.4 q43 -1.7 87 0.9 t35 -0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M251 171.8 q43 0.2 87 -0.1 t35 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M251 179.0 q43 0.5 87 -0.3 t35 0.3" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M377 155v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 186H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-29" y="186" width="136" height="31" fill="#C6B396"/><path d="M-25 194.8 q45 -1.1 91 0.5 t37 -0.5" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-25 198.6 q45 -0.6 91 0.3 t37 -0.3" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-25 194.3 q45 1.5 91 -0.8 t37 0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M107 186v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="107" y="186" width="169" height="31" fill="#B9A688"/><path d="M111 197.9 q56 -1.6 113 0.8 t48 -0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M111 206.2 q56 1.1 113 -0.5 t48 0.5" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M111 201.1 q56 0.8 113 -0.4 t48 0.4" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M276 186v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="276" y="186" width="176" height="31" fill="#CBB99D"/><path d="M280 210.1 q59 0.1 117 -0.1 t51 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M280 194.8 q59 0.2 117 -0.1 t51 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M452 186v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 217H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-23" y="217" width="177" height="31" fill="#D3C3A8"/><path d="M-19 236.2 q59 -1.1 118 0.5 t51 -0.5" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-19 230.0 q59 -1.5 118 0.7 t51 -0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M154 217v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="154" y="217" width="138" height="31" fill="#C6B396"/><path d="M158 235.1 q46 0.5 92 -0.2 t38 0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M158 238.0 q46 1.1 92 -0.6 t38 0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M158 226.7 q46 -1.1 92 0.6 t38 -0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M292 217v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="292" y="217" width="161" height="31" fill="#D0BEA2"/><path d="M296 226.8 q54 -0.0 107 0.0 t46 -0.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M296 236.9 q54 2.2 107 -1.1 t46 1.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M453 217v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 248H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-55" y="248" width="170" height="31" fill="#D3C3A8"/><path d="M-51 267.2 q57 2.0 113 -1.0 t49 1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-51 262.5 q57 1.9 113 -1.0 t49 1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M115 248v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="115" y="248" width="154" height="31" fill="#D3C3A8"/><path d="M119 258.2 q51 -1.2 103 0.6 t43 -0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M119 257.7 q51 -1.3 103 0.7 t43 -0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M269 248v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="269" y="248" width="189" height="31" fill="#C6B396"/><path d="M273 263.1 q63 0.7 126 -0.3 t55 0.3" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M273 269.2 q63 -1.8 126 0.9 t55 -0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M458 248v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 279H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-104" y="279" width="125" height="31" fill="#B9A688"/><path d="M-100 294.1 q42 -1.4 83 0.7 t34 -0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-100 300.0 q42 -0.7 83 0.4 t34 -0.4" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M21 279v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="21" y="279" width="160" height="31" fill="#B9A688"/><path d="M25 299.1 q53 -1.8 107 0.9 t45 -0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M25 288.0 q53 2.2 107 -1.1 t45 1.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M25 285.5 q53 0.4 107 -0.2 t45 0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M181 279v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="181" y="279" width="169" height="31" fill="#D0BEA2"/><path d="M185 296.6 q56 0.4 113 -0.2 t48 0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M185 294.0 q56 1.9 113 -1.0 t48 1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M350 279v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 310H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-39" y="310" width="180" height="31" fill="#C6B396"/><path d="M-35 316.4 q60 1.3 120 -0.7 t52 0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-35 329.8 q60 -1.7 120 0.9 t52 -0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M141 310v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="141" y="310" width="127" height="31" fill="#B9A688"/><path d="M145 331.7 q42 -1.3 85 0.6 t34 -0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M145 320.8 q42 -0.9 85 0.5 t34 -0.5" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M268 310v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="268" y="310" width="140" height="31" fill="#C6B396"/><path d="M272 320.9 q47 -0.4 93 0.2 t39 -0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M272 318.5 q47 1.8 93 -0.9 t39 0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M272 322.7 q47 -0.2 93 0.1 t39 -0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M408 310v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 341H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-94" y="341" width="176" height="31" fill="#B9A688"/><path d="M-90 357.1 q59 0.1 117 -0.1 t51 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-90 347.4 q59 -0.3 117 0.1 t51 -0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M82 341v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="82" y="341" width="133" height="31" fill="#C6B396"/><path d="M86 361.7 q44 -1.5 89 0.8 t36 -0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M86 349.7 q44 0.5 89 -0.3 t36 0.3" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M215 341v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="215" y="341" width="125" height="31" fill="#C6B396"/><path d="M219 353.2 q42 0.1 83 -0.0 t34 0.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M219 357.6 q42 1.3 83 -0.6 t34 0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M340 341v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 372H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-33" y="372" width="181" height="31" fill="#CBB99D"/><path d="M-29 381.6 q60 -2.0 121 1.0 t52 -1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-29 379.9 q60 -0.2 121 0.1 t52 -0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M148 372v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="148" y="372" width="113" height="31" fill="#CBB99D"/><path d="M152 384.2 q38 2.1 75 -1.0 t30 1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M152 389.5 q38 -1.3 75 0.7 t30 -0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M152 383.3 q38 0.0 75 -0.0 t30 0.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M261 372v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="261" y="372" width="171" height="31" fill="#C6B396"/><path d="M265 391.3 q57 1.7 114 -0.8 t49 0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M265 395.9 q57 -1.1 114 0.5 t49 -0.5" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M432 372v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 403H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect width="300" height="400" fill="url(#ww-sheen)"/></svg></div><span class="nm">Ламинат</span></a></li>
+        <li><a href="#"><div class="ph"><svg class="art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Обои, рисунок до фото" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="url(#ww-wp)"/><rect width="300" height="400" fill="url(#ww-sheen)"/><path d="M0 0h300v400H0z" fill="none" stroke="#000" stroke-opacity=".04"/></svg></div><span class="nm">Обои</span></a></li>
+        <li><a href="#"><div class="ph"><svg class="art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Краска, веер выкрасов до фото" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#EEEAE3"/><g transform="rotate(-27 150 335)"><rect x="121" y="74" width="58" height="276" rx="5" fill="#F4F0E8" stroke="#DCD5C9" stroke-width="1"/><rect x="127" y="82" width="46" height="34" rx="2" fill="#FBFAF7"/><path d="M132 93h28M132 102h18M132 110h23" stroke="#B9B2A6" stroke-width="2" stroke-linecap="round"/></g><g transform="rotate(-9 150 335)"><rect x="121" y="74" width="58" height="276" rx="5" fill="#D7CDBD" stroke="#C3B8A6" stroke-width="1"/><rect x="127" y="82" width="46" height="34" rx="2" fill="#FBFAF7"/><path d="M132 93h28M132 102h18M132 110h23" stroke="#B9B2A6" stroke-width="2" stroke-linecap="round"/></g><g transform="rotate(9 150 335)"><rect x="121" y="74" width="58" height="276" rx="5" fill="#A9B5A1" stroke="#94A08C" stroke-width="1"/><rect x="127" y="82" width="46" height="34" rx="2" fill="#FBFAF7"/><path d="M132 93h28M132 102h18M132 110h23" stroke="#B9B2A6" stroke-width="2" stroke-linecap="round"/></g><g transform="rotate(27 150 335)"><rect x="121" y="74" width="58" height="276" rx="5" fill="#5B6961" stroke="#4B5851" stroke-width="1"/><rect x="127" y="82" width="46" height="34" rx="2" fill="#FBFAF7"/><path d="M132 93h28M132 102h18M132 110h23" stroke="#B9B2A6" stroke-width="2" stroke-linecap="round"/></g><circle cx="150" cy="335" r="6" fill="#FBFAF7" stroke="#9C9487" stroke-width="1.5"/><circle cx="150" cy="335" r="2" fill="#9C9487"/></svg></div><span class="nm">Краска</span></a></li>
+        <li><a href="#"><div class="ph"><svg class="art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Плинтус, рисунок и сечение до фото" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#E3DDD2"/><rect y="292" width="300" height="108" fill="url(#ww-floor)"/><rect y="244" width="300" height="48" fill="#F8F6F1"/><rect y="244" width="300" height="5" fill="#FFFFFF"/><path d="M0 249.5H300M0 256H300" stroke="#C9C2B5" stroke-width="1"/><rect y="292" width="300" height="5" fill="#000" fill-opacity=".10"/><rect y="238" width="300" height="6" fill="#000" fill-opacity=".05"/><g transform="translate(176 52)"><rect width="98" height="132" rx="3" fill="#F6F3EE" stroke="#CFC7BA"/><path d="M22 112V20M22 112H86" stroke="#2A2620" stroke-width="1.2"/><rect x="8" y="20" width="14" height="92" fill="url(#ww-hatch)"/><rect x="22" y="112" width="64" height="12" fill="url(#ww-hatch)"/><path d="M22 112V38h9c6 0 8 5 8 10s3 9 9 10v54z" fill="#fff" stroke="#2A2620" stroke-width="1.4" stroke-linejoin="round"/><path d="M58 38v74M54 38h8M54 112h8" stroke="#7A5A3A" stroke-width="1"/></g></svg></div><span class="nm">Плинтус</span></a></li>
+        <li><a href="#"><div class="ph"><svg class="art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Молдинги на стене, рисунок до фото" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#47534D"/><rect x="46" y="62" width="208" height="128" fill="none" stroke="#5E6C65" stroke-width="7"/><rect x="50.5" y="66.5" width="199" height="119" fill="none" stroke="#323C37" stroke-width="2"/><rect x="42.5" y="58.5" width="215" height="135" fill="none" stroke="#6E7C75" stroke-width="1"/><rect x="46" y="214" width="208" height="128" fill="none" stroke="#5E6C65" stroke-width="7"/><rect x="50.5" y="218.5" width="199" height="119" fill="none" stroke="#323C37" stroke-width="2"/><rect x="42.5" y="210.5" width="215" height="135" fill="none" stroke="#6E7C75" stroke-width="1"/><rect y="0" width="300" height="400" fill="url(#ww-sheen)"/></svg></div><span class="nm">Молдинги</span></a></li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+<!-- ======================= ВАРИАНТ 2 ======================= -->
+<div class="variant vb" id="v2" data-variant="2" hidden>
+  <div class="b-top">
+    <div class="in">
+      <a href="#">Доставка и оплата</a><a href="#">Где купить</a><a href="#">Дилерам</a><a href="#">Дизайнерам и архитекторам</a>
+      <div class="r"><a href="#">WhatsApp</a><a href="#">Telegram</a><a class="tel" href="tel:+79037475222">+7 (903) 747-52-22</a></div>
+    </div>
+  </div>
+  <header class="b-head" data-head>
+    <div class="b-row">
+      <a class="logo" href="#" aria-label="WINWOOD, на главную"><img src="https://winwoodmsk.ru/image/catalog/11111hh.png" width="180" height="57" alt="WINWOOD" style="height:34px"></a>
+      <a class="b-catbtn" href="#"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="4" width="6.5" height="6.5" rx="1.2"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.2"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.2"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.2"/></svg><span class="lbl">Каталог</span></a>
+      <form class="b-search" role="search" onsubmit="return false">
+        <label class="sr" for="q">Поиск по каталогу</label>
+        <svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input id="q" type="search" placeholder="Например, ёлочка дуб селект" autocomplete="off">
+        <kbd>Найти</kbd>
+      </form>
+      <div class="b-acts">
+        <a class="b-act" href="#" aria-label="Сравнение"><svg class="icon" viewBox="0 0 24 24"><path d="M7 20V10M12 20V4M17 20v-7"/></svg><span class="lbl">Сравнение</span></a>
+        <a class="b-act" href="#" aria-label="Избранное"><svg class="icon" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z"/></svg><span class="lbl">Избранное</span></a>
+        <a class="b-act" href="#" aria-label="Корзина, 0 товаров"><svg class="icon" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="lbl">Корзина</span><span class="count">0</span></a>
+      </div>
+    </div>
+    <nav class="b-nav" aria-label="Разделы каталога">
+      <a href="#">Паркет</a><a href="#">Инженерная доска</a><a href="#">Ламинат</a><a href="#">Обои</a><a href="#">Краска</a><a href="#">Плинтус</a><a href="#">Молдинги</a><a class="sale" href="#">Акции</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="b-hero">
+      <div class="b-show" data-in="photo" style="--d:0">
+        <img src="https://winwoodmsk.ru/image/cache/catalog/galereya/243-1540x426.jpg" width="1540" height="426" alt="Паркет ёлочкой в светлой гостиной, фото с объекта WINWOOD" fetchpriority="high">
+        <div class="b-card">
+          <h1 data-in style="--d:1">Пол, стены и&nbsp;погонаж в&nbsp;одном магазине</h1>
+          <p data-in style="--d:2">Паркет собственного производства WINWOOD, ламинат, обои, краска, плинтус и&nbsp;молдинги. Оплата онлайн при заказе.</p>
+          <div class="row" data-in style="--d:3">
+            <a class="bbtn bbtn-g" href="#">Перейти в каталог</a>
+            <a class="bbtn bbtn-s" href="#">Акции</a>
+          </div>
+        </div>
+      </div>
+      <div class="b-side">
+        <a class="b-tile" href="#" data-in style="--d:3">
+          <div class="tx"><div><b>Паркет напрямую с&nbsp;производства</b><span>Ёлочка, инженерная и массивная доска</span></div><em>Выбрать паркет</em></div>
+          <div class="im"><img src="https://winwoodmsk.ru/image/cache/catalog/image_new/galereja_rabot/1(2)-666x500.jpeg" width="520" height="520" alt="Паркет ёлочкой из дуба"></div>
+        </a>
+        <a class="b-tile mint" href="#" data-in style="--d:4">
+          <div class="tx"><div><b>Краска и плинтус в&nbsp;тон полу</b><span>Подборки к каждой коллекции паркета</span></div><em>Смотреть подборки</em></div>
+          <div class="im"><svg class="art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Краска, веер выкрасов до фото" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#EEEAE3"/><g transform="rotate(-27 150 335)"><rect x="121" y="74" width="58" height="276" rx="5" fill="#F4F0E8" stroke="#DCD5C9" stroke-width="1"/><rect x="127" y="82" width="46" height="34" rx="2" fill="#FBFAF7"/><path d="M132 93h28M132 102h18M132 110h23" stroke="#B9B2A6" stroke-width="2" stroke-linecap="round"/></g><g transform="rotate(-9 150 335)"><rect x="121" y="74" width="58" height="276" rx="5" fill="#D7CDBD" stroke="#C3B8A6" stroke-width="1"/><rect x="127" y="82" width="46" height="34" rx="2" fill="#FBFAF7"/><path d="M132 93h28M132 102h18M132 110h23" stroke="#B9B2A6" stroke-width="2" stroke-linecap="round"/></g><g transform="rotate(9 150 335)"><rect x="121" y="74" width="58" height="276" rx="5" fill="#A9B5A1" stroke="#94A08C" stroke-width="1"/><rect x="127" y="82" width="46" height="34" rx="2" fill="#FBFAF7"/><path d="M132 93h28M132 102h18M132 110h23" stroke="#B9B2A6" stroke-width="2" stroke-linecap="round"/></g><g transform="rotate(27 150 335)"><rect x="121" y="74" width="58" height="276" rx="5" fill="#5B6961" stroke="#4B5851" stroke-width="1"/><rect x="127" y="82" width="46" height="34" rx="2" fill="#FBFAF7"/><path d="M132 93h28M132 102h18M132 110h23" stroke="#B9B2A6" stroke-width="2" stroke-linecap="round"/></g><circle cx="150" cy="335" r="6" fill="#FBFAF7" stroke="#9C9487" stroke-width="1.5"/><circle cx="150" cy="335" r="2" fill="#9C9487"/></svg></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="b-sec" aria-labelledby="b-cats-h">
+      <h2 id="b-cats-h">Разделы каталога</h2>
+      <ul class="b-cats">
+        <li><a href="#"><div class="ph"><img loading="lazy" src="https://winwoodmsk.ru/image/catalog/image_new/galereja_rabot/1(13).jpg" width="420" height="420" alt="Паркет французской ёлочкой"></div><span class="nm">Паркет</span><span class="sub">Производство WINWOOD</span></a></li>
+        <li><a href="#"><div class="ph"><svg class="art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ламинат, рисунок до фото" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#C4B193"/><rect x="-61" y="0" width="129" height="31" fill="#B9A688"/><path d="M-57 7.4 q43 0.2 86 -0.1 t35 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-57 12.9 q43 -1.9 86 1.0 t35 -1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M68 0v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="68" y="0" width="174" height="31" fill="#BFAC8E"/><path d="M72 7.6 q58 -0.4 116 0.2 t50 -0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M72 10.6 q58 0.2 116 -0.1 t50 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M242 0v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="242" y="0" width="117" height="31" fill="#C6B396"/><path d="M246 24.0 q39 0.6 78 -0.3 t31 0.3" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M246 17.1 q39 -1.9 78 1.0 t31 -1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M359 0v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 31H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-94" y="31" width="160" height="31" fill="#CBB99D"/><path d="M-90 37.9 q53 1.6 107 -0.8 t45 0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-90 42.5 q53 -1.6 107 0.8 t45 -0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M66 31v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="66" y="31" width="125" height="31" fill="#C6B396"/><path d="M70 47.6 q42 0.8 83 -0.4 t34 0.4" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M70 39.0 q42 0.3 83 -0.2 t34 0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M70 40.6 q42 -1.8 83 0.9 t34 -0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M191 31v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="191" y="31" width="118" height="31" fill="#C6B396"/><path d="M195 48.8 q39 -0.0 79 0.0 t31 -0.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M195 47.1 q39 1.2 79 -0.6 t31 0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M309 31v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 62H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-79" y="62" width="184" height="31" fill="#B9A688"/><path d="M-75 73.7 q61 1.3 123 -0.6 t53 0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-75 81.3 q61 -1.1 123 0.6 t53 -0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-75 78.9 q61 0.1 123 -0.1 t53 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M105 62v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="105" y="62" width="153" height="31" fill="#D0BEA2"/><path d="M109 73.5 q51 2.1 102 -1.1 t43 1.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M109 70.2 q51 -0.4 102 0.2 t43 -0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M109 82.4 q51 -1.5 102 0.8 t43 -0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M258 62v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="258" y="62" width="172" height="31" fill="#B9A688"/><path d="M262 86.3 q57 -1.9 115 0.9 t49 -0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M262 78.6 q57 1.3 115 -0.6 t49 0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M430 62v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 93H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-60" y="93" width="153" height="31" fill="#D0BEA2"/><path d="M-56 110.3 q51 0.4 102 -0.2 t43 0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-56 107.7 q51 1.5 102 -0.7 t43 0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-56 116.9 q51 -0.1 102 0.1 t43 -0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M93 93v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="93" y="93" width="118" height="31" fill="#CBB99D"/><path d="M97 111.3 q39 2.2 79 -1.1 t31 1.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M97 114.6 q39 -0.9 79 0.5 t31 -0.5" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M97 106.3 q39 0.7 79 -0.4 t31 0.4" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M211 93v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="211" y="93" width="112" height="31" fill="#B9A688"/><path d="M215 102.2 q37 -1.7 75 0.8 t29 -0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M215 100.1 q37 1.2 75 -0.6 t29 0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M215 101.5 q37 -1.1 75 0.6 t29 -0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M323 93v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 124H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-70" y="124" width="173" height="31" fill="#CBB99D"/><path d="M-66 138.5 q58 0.2 115 -0.1 t50 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-66 146.8 q58 1.4 115 -0.7 t50 0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M103 124v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="103" y="124" width="180" height="31" fill="#D3C3A8"/><path d="M107 148.7 q60 0.8 120 -0.4 t52 0.4" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M107 137.2 q60 -1.2 120 0.6 t52 -0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M107 131.6 q60 -1.5 120 0.8 t52 -0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M283 124v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="283" y="124" width="139" height="31" fill="#CBB99D"/><path d="M287 145.8 q46 -1.4 93 0.7 t38 -0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M287 135.4 q46 -1.6 93 0.8 t38 -0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M287 140.2 q46 0.5 93 -0.2 t38 0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M422 124v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 155H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-60" y="155" width="126" height="31" fill="#D0BEA2"/><path d="M-56 169.7 q42 1.6 84 -0.8 t34 0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-56 179.1 q42 0.8 84 -0.4 t34 0.4" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M66 155v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="66" y="155" width="181" height="31" fill="#B9A688"/><path d="M70 168.6 q60 -1.7 121 0.9 t52 -0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M70 173.1 q60 -1.9 121 1.0 t52 -1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M70 162.3 q60 -1.3 121 0.6 t52 -0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M247 155v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="247" y="155" width="130" height="31" fill="#CBB99D"/><path d="M251 172.4 q43 -1.7 87 0.9 t35 -0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M251 171.8 q43 0.2 87 -0.1 t35 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M251 179.0 q43 0.5 87 -0.3 t35 0.3" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M377 155v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 186H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-29" y="186" width="136" height="31" fill="#C6B396"/><path d="M-25 194.8 q45 -1.1 91 0.5 t37 -0.5" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-25 198.6 q45 -0.6 91 0.3 t37 -0.3" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-25 194.3 q45 1.5 91 -0.8 t37 0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M107 186v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="107" y="186" width="169" height="31" fill="#B9A688"/><path d="M111 197.9 q56 -1.6 113 0.8 t48 -0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M111 206.2 q56 1.1 113 -0.5 t48 0.5" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M111 201.1 q56 0.8 113 -0.4 t48 0.4" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M276 186v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="276" y="186" width="176" height="31" fill="#CBB99D"/><path d="M280 210.1 q59 0.1 117 -0.1 t51 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M280 194.8 q59 0.2 117 -0.1 t51 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M452 186v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 217H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-23" y="217" width="177" height="31" fill="#D3C3A8"/><path d="M-19 236.2 q59 -1.1 118 0.5 t51 -0.5" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-19 230.0 q59 -1.5 118 0.7 t51 -0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M154 217v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="154" y="217" width="138" height="31" fill="#C6B396"/><path d="M158 235.1 q46 0.5 92 -0.2 t38 0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M158 238.0 q46 1.1 92 -0.6 t38 0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M158 226.7 q46 -1.1 92 0.6 t38 -0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M292 217v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="292" y="217" width="161" height="31" fill="#D0BEA2"/><path d="M296 226.8 q54 -0.0 107 0.0 t46 -0.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M296 236.9 q54 2.2 107 -1.1 t46 1.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M453 217v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 248H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-55" y="248" width="170" height="31" fill="#D3C3A8"/><path d="M-51 267.2 q57 2.0 113 -1.0 t49 1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-51 262.5 q57 1.9 113 -1.0 t49 1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M115 248v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="115" y="248" width="154" height="31" fill="#D3C3A8"/><path d="M119 258.2 q51 -1.2 103 0.6 t43 -0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M119 257.7 q51 -1.3 103 0.7 t43 -0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M269 248v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="269" y="248" width="189" height="31" fill="#C6B396"/><path d="M273 263.1 q63 0.7 126 -0.3 t55 0.3" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M273 269.2 q63 -1.8 126 0.9 t55 -0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M458 248v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 279H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-104" y="279" width="125" height="31" fill="#B9A688"/><path d="M-100 294.1 q42 -1.4 83 0.7 t34 -0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-100 300.0 q42 -0.7 83 0.4 t34 -0.4" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M21 279v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="21" y="279" width="160" height="31" fill="#B9A688"/><path d="M25 299.1 q53 -1.8 107 0.9 t45 -0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M25 288.0 q53 2.2 107 -1.1 t45 1.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M25 285.5 q53 0.4 107 -0.2 t45 0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M181 279v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="181" y="279" width="169" height="31" fill="#D0BEA2"/><path d="M185 296.6 q56 0.4 113 -0.2 t48 0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M185 294.0 q56 1.9 113 -1.0 t48 1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M350 279v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 310H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-39" y="310" width="180" height="31" fill="#C6B396"/><path d="M-35 316.4 q60 1.3 120 -0.7 t52 0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-35 329.8 q60 -1.7 120 0.9 t52 -0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M141 310v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="141" y="310" width="127" height="31" fill="#B9A688"/><path d="M145 331.7 q42 -1.3 85 0.6 t34 -0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M145 320.8 q42 -0.9 85 0.5 t34 -0.5" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M268 310v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="268" y="310" width="140" height="31" fill="#C6B396"/><path d="M272 320.9 q47 -0.4 93 0.2 t39 -0.2" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M272 318.5 q47 1.8 93 -0.9 t39 0.9" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M272 322.7 q47 -0.2 93 0.1 t39 -0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M408 310v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 341H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-94" y="341" width="176" height="31" fill="#B9A688"/><path d="M-90 357.1 q59 0.1 117 -0.1 t51 0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-90 347.4 q59 -0.3 117 0.1 t51 -0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M82 341v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="82" y="341" width="133" height="31" fill="#C6B396"/><path d="M86 361.7 q44 -1.5 89 0.8 t36 -0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M86 349.7 q44 0.5 89 -0.3 t36 0.3" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M215 341v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="215" y="341" width="125" height="31" fill="#C6B396"/><path d="M219 353.2 q42 0.1 83 -0.0 t34 0.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M219 357.6 q42 1.3 83 -0.6 t34 0.6" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M340 341v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 372H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect x="-33" y="372" width="181" height="31" fill="#CBB99D"/><path d="M-29 381.6 q60 -2.0 121 1.0 t52 -1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M-29 379.9 q60 -0.2 121 0.1 t52 -0.1" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M148 372v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="148" y="372" width="113" height="31" fill="#CBB99D"/><path d="M152 384.2 q38 2.1 75 -1.0 t30 1.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M152 389.5 q38 -1.3 75 0.7 t30 -0.7" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M152 383.3 q38 0.0 75 -0.0 t30 0.0" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M261 372v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><rect x="261" y="372" width="171" height="31" fill="#C6B396"/><path d="M265 391.3 q57 1.7 114 -0.8 t49 0.8" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M265 395.9 q57 -1.1 114 0.5 t49 -0.5" stroke="#8C7657" stroke-opacity=".28" stroke-width=".8" fill="none"/><path d="M432 372v31" stroke="#7C6A50" stroke-opacity=".45" stroke-width="1"/><path d="M0 403H300" stroke="#7C6A50" stroke-opacity=".5" stroke-width="1"/><rect width="300" height="400" fill="url(#ww-sheen)"/></svg></div><span class="nm">Ламинат</span><span class="sub">Под дерево и камень</span></a></li>
+        <li><a href="#"><div class="ph"><svg class="art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Обои, рисунок до фото" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="url(#ww-wp)"/><rect width="300" height="400" fill="url(#ww-sheen)"/><path d="M0 0h300v400H0z" fill="none" stroke="#000" stroke-opacity=".04"/></svg></div><span class="nm">Обои</span><span class="sub">Флизелиновые и виниловые</span></a></li>
+        <li><a href="#"><div class="ph"><svg class="art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Краска, веер выкрасов до фото" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#EEEAE3"/><g transform="rotate(-27 150 335)"><rect x="121" y="74" width="58" height="276" rx="5" fill="#F4F0E8" stroke="#DCD5C9" stroke-width="1"/><rect x="127" y="82" width="46" height="34" rx="2" fill="#FBFAF7"/><path d="M132 93h28M132 102h18M132 110h23" stroke="#B9B2A6" stroke-width="2" stroke-linecap="round"/></g><g transform="rotate(-9 150 335)"><rect x="121" y="74" width="58" height="276" rx="5" fill="#D7CDBD" stroke="#C3B8A6" stroke-width="1"/><rect x="127" y="82" width="46" height="34" rx="2" fill="#FBFAF7"/><path d="M132 93h28M132 102h18M132 110h23" stroke="#B9B2A6" stroke-width="2" stroke-linecap="round"/></g><g transform="rotate(9 150 335)"><rect x="121" y="74" width="58" height="276" rx="5" fill="#A9B5A1" stroke="#94A08C" stroke-width="1"/><rect x="127" y="82" width="46" height="34" rx="2" fill="#FBFAF7"/><path d="M132 93h28M132 102h18M132 110h23" stroke="#B9B2A6" stroke-width="2" stroke-linecap="round"/></g><g transform="rotate(27 150 335)"><rect x="121" y="74" width="58" height="276" rx="5" fill="#5B6961" stroke="#4B5851" stroke-width="1"/><rect x="127" y="82" width="46" height="34" rx="2" fill="#FBFAF7"/><path d="M132 93h28M132 102h18M132 110h23" stroke="#B9B2A6" stroke-width="2" stroke-linecap="round"/></g><circle cx="150" cy="335" r="6" fill="#FBFAF7" stroke="#9C9487" stroke-width="1.5"/><circle cx="150" cy="335" r="2" fill="#9C9487"/></svg></div><span class="nm">Краска</span><span class="sub">Для стен и потолков</span></a></li>
+        <li><a href="#"><div class="ph"><svg class="art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Плинтус, рисунок и сечение до фото" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#E3DDD2"/><rect y="292" width="300" height="108" fill="url(#ww-floor)"/><rect y="244" width="300" height="48" fill="#F8F6F1"/><rect y="244" width="300" height="5" fill="#FFFFFF"/><path d="M0 249.5H300M0 256H300" stroke="#C9C2B5" stroke-width="1"/><rect y="292" width="300" height="5" fill="#000" fill-opacity=".10"/><rect y="238" width="300" height="6" fill="#000" fill-opacity=".05"/><g transform="translate(176 52)"><rect width="98" height="132" rx="3" fill="#F6F3EE" stroke="#CFC7BA"/><path d="M22 112V20M22 112H86" stroke="#2A2620" stroke-width="1.2"/><rect x="8" y="20" width="14" height="92" fill="url(#ww-hatch)"/><rect x="22" y="112" width="64" height="12" fill="url(#ww-hatch)"/><path d="M22 112V38h9c6 0 8 5 8 10s3 9 9 10v54z" fill="#fff" stroke="#2A2620" stroke-width="1.4" stroke-linejoin="round"/><path d="M58 38v74M54 38h8M54 112h8" stroke="#7A5A3A" stroke-width="1"/></g></svg></div><span class="nm">Плинтус</span><span class="sub">Напольный и потолочный</span></a></li>
+        <li><a href="#"><div class="ph"><svg class="art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Молдинги на стене, рисунок до фото" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#47534D"/><rect x="46" y="62" width="208" height="128" fill="none" stroke="#5E6C65" stroke-width="7"/><rect x="50.5" y="66.5" width="199" height="119" fill="none" stroke="#323C37" stroke-width="2"/><rect x="42.5" y="58.5" width="215" height="135" fill="none" stroke="#6E7C75" stroke-width="1"/><rect x="46" y="214" width="208" height="128" fill="none" stroke="#5E6C65" stroke-width="7"/><rect x="50.5" y="218.5" width="199" height="119" fill="none" stroke="#323C37" stroke-width="2"/><rect x="42.5" y="210.5" width="215" height="135" fill="none" stroke="#6E7C75" stroke-width="1"/><rect y="0" width="300" height="400" fill="url(#ww-sheen)"/></svg></div><span class="nm">Молдинги</span><span class="sub">Для стен и дверей</span></a></li>
+      </ul>
+    </section>
+
+    <ul class="b-plus">
+      <li><b>Своё производство паркета</b><span>Ёлочка, инженерная и массивная доска из дуба</span></li>
+      <li><b>Более 600 оттенков</b><span>Сортировки рустик, классик, прайм и селект</span></li>
+      <li><b>Запас на складе</b><span>Разные ширины и сортировки в наличии</span></li>
+      <li><b>Оплата онлайн</b><span>Картой при оформлении заказа на сайте</span></li>
+    </ul>
+  </main>
+</div>
+
+<!-- ======================= ПЕРЕКЛЮЧАТЕЛЬ ======================= -->
+<div class="switch" role="group" aria-label="Варианты первого экрана">
+  <p class="note"><b>Макет главной WINWOOD</b>Фото с вашего сайта, в остальных разделах пока рисунки</p>
+  <div class="seg">
+    <button type="button" data-go="1" aria-pressed="true">Вариант 1<small>шоурум</small></button>
+    <button type="button" data-go="2" aria-pressed="false">Вариант 2<small>каталог</small></button>
+  </div>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var views = {1: document.getElementById('v1'), 2: document.getElementById('v2')};
+  var btns = document.querySelectorAll('[data-go]');
+  var current = 0;
+
+  function enter(el){
+    el.classList.remove('is-in');
+    void el.offsetWidth;
+    requestAnimationFrame(function(){ el.classList.add('is-in'); });
+  }
+  function show(n, animate){
+    n = views[n] ? n : 1;
+    if (n === current) return;
+    var next = views[n], prev = views[current];
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.getAttribute('data-go') === String(n))); });
+    try { history.replaceState(null, '', '#v' + n); } catch(e) {}
+    var swap = function(){
+      if (prev) { prev.hidden = true; prev.classList.remove('leaving'); }
+      next.hidden = false;
+      window.scrollTo(0, 0);
+      if (reduce) next.classList.add('is-in'); else enter(next);
+    };
+    current = n;
+    if (prev && animate && !reduce) { prev.classList.add('leaving'); setTimeout(swap, 180); }
+    else swap();
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ show(+b.getAttribute('data-go'), true); }); });
+  var m = /v?(\d)/.exec(location.hash || '');
+  show(m ? +m[1] : 1, false);
+
+  // шапка: линия-разделитель при прокрутке
+  var heads = document.querySelectorAll('[data-head]');
+  var onScroll = function(){ var s = window.scrollY > 8; heads.forEach(function(h){ h.classList.toggle('scrolled', s); }); };
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // подсказки в поиске: показывают, что в каталоге тысячи позиций
+  var q = document.getElementById('q');
+  var hints = ['Например, ёлочка дуб селект', 'Например, плинтус под покраску 80 мм', 'Например, ламинат 33 класс', 'Например, молдинг для стен 40 мм', 'Например, краска для стен белая матовая'];
+  var i = 0;
+  if (!reduce) setInterval(function(){ if (document.activeElement !== q && !q.value) { i = (i + 1) % hints.length; q.placeholder = hints[i]; } }, 2800);
+})();
+</script>
+</body>
+</html>
