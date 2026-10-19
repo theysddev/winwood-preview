@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>WINWOOD — макет интернет-магазина</title>
-<meta name="description" content="Макет интернет-магазина WINWOOD: главная, каталог с фильтрами и карточка товара. Паркет собственного производства, ламинат, обои, краска, плинтус и молдинги.">
+<title>Макет интернет-магазина</title>
+<meta name="description" content="Макет интернет-магазина: главная, каталог с фильтрами и карточка товара. Паркет собственного производства, ламинат, обои, краска, плинтус и молдинги.">
 <meta name="robots" content="noindex, nofollow">
-<meta property="og:title" content="WINWOOD — макет интернет-магазина">
+<meta property="og:title" content="Макет интернет-магазина">
 <meta property="og:description" content="Главная, каталог и карточка товара. Прототип для согласования.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://winwoodmsk.ru/image/catalog/image_new/galereja_rabot/1(16).jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F4D3B'/%3E%3Cpath d='M17 20h7l4 14 4-14h0l4 14 4-14h7l-8 25h-6l-4-12-4 12h-6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F4D3B'/%3E%3Crect x='18' y='18' width='28' height='28' rx='6' fill='none' stroke='%23fff' stroke-width='4'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://winwoodmsk.ru">
 <link rel="preconnect" href="https://cdn.profi.ru">
 <link rel="preload" as="font" type="font/woff2" href="commissioner-cyrillic-700-normal.woff2" crossorigin>
@@ -54,7 +54,7 @@ input,select{font:inherit;color:inherit}
 .b-head{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .2s ease}
 .b-head.scrolled{border-bottom-color:var(--line)}
 .b-row{display:flex;align-items:center;gap:16px;height:80px;padding:0 var(--gut)}
-.logo img{height:34px;width:auto}
+.logo-ph{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 18px;border:1.5px dashed #9DB3A7;border-radius:10px;background:#F6F9F7;color:var(--green);font-weight:600;font-size:15px;white-space:nowrap;flex:none}
 .b-catbtn{display:inline-flex;align-items:center;gap:10px;height:50px;padding:0 20px;border-radius:10px;background:var(--green);color:#fff;font-weight:600;flex:none;transition:background-color .15s ease,transform .12s ease}
 .b-catbtn:active{transform:scale(.97)}
 .b-search{flex:1;position:relative;min-width:0}
@@ -335,7 +335,7 @@ input,select{font:inherit;color:inherit}
   </div>
   <header class="b-head" data-head>
     <div class="b-row">
-      <a class="logo" href="#home" aria-label="WINWOOD, на главную"><img src="https://winwoodmsk.ru/image/catalog/11111hh.png" width="320" height="102" alt="WINWOOD"></a>
+      <a class="logo logo-ph" href="#home" aria-label="Логотип магазина, на главную">Логотип</a>
       <a class="b-catbtn" href="#catalog"><svg class="icon"><use href="#i-grid"/></svg><span class="lbl">Каталог</span></a>
       <form class="b-search" role="search" id="search">
         <label class="sr" for="q">Поиск по каталогу</label>
@@ -361,7 +361,7 @@ input,select{font:inherit;color:inherit}
         <img src="https://winwoodmsk.ru/image/cache/catalog/galereya/243-1540x426.jpg" width="1540" height="426" alt="Паркет ёлочкой в светлой гостиной, фото с объекта WINWOOD" fetchpriority="high">
         <div class="b-card">
           <h1 data-in style="--d:1">Пол, стены и&nbsp;погонаж в&nbsp;одном магазине</h1>
-          <p data-in style="--d:2">Паркет собственного производства WINWOOD, ламинат, обои, краска, плинтус и&nbsp;молдинги.</p>
+          <p data-in style="--d:2">Паркет WINWOOD от производителя, ламинат, обои, краска, плинтус и&nbsp;молдинги.</p>
           <div class="row" data-in style="--d:3">
             <a class="bbtn bbtn-g" href="#catalog">Перейти в каталог</a>
             <a class="bbtn bbtn-s" href="https://winwoodmsk.ru/uslugi-po-ukladke">Укладка паркета</a>
@@ -462,7 +462,7 @@ input,select{font:inherit;color:inherit}
           <ul class="pgrid" id="c-grid"></ul>
           <div class="empty" id="c-empty" hidden>
             <h2>В макете таких товаров нет</h2>
-            <p>В макете 12 товаров из 442. На сайте этот фильтр покажет все подходящие позиции из каталога WINWOOD.</p>
+            <p>В макете 12 товаров из 442. На сайте этот фильтр покажет все подходящие позиции из каталога.</p>
             <button type="button" class="bbtn bbtn-s" id="e-reset">Сбросить фильтры</button>
           </div>
           <ol class="pager" aria-label="Страницы">
@@ -553,7 +553,7 @@ input,select{font:inherit;color:inherit}
 
   <footer class="foot">
     <div class="brand">
-      <img src="https://winwoodmsk.ru/image/catalog/11111hh.png" width="320" height="102" alt="WINWOOD" style="height:30px;width:auto">
+      <span class="logo-ph">Логотип</span>
       <a class="tel" href="tel:+79037475222">+7 (903) 747-52-22</a>
       <a class="muted" href="mailto:winwoodmsk@yandex.ru">winwoodmsk@yandex.ru</a>
     </div>
@@ -572,7 +572,7 @@ input,select{font:inherit;color:inherit}
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <nav class="switch" aria-label="Страницы макета">
-  <p class="note"><b>Макет магазина WINWOOD</b>Паркет — с вашего сайта, остальные разделы — после выгрузок поставщиков</p>
+  <p class="note"><b>Макет интернет-магазина</b>Паркет — с вашего сайта, остальные разделы — после выгрузок поставщиков</p>
   <div class="seg">
     <a href="#home" data-tab="home">Главная</a>
     <a href="#catalog" data-tab="catalog">Каталог</a>
@@ -761,7 +761,8 @@ input,select{font:inherit;color:inherit}
 
   // ---------- страницы ----------
   var pages = {home:$('p-home'), catalog:$('p-catalog'), product:$('p-product')};
-  var titles = {home:'WINWOOD — паркет, ламинат, обои и краска', catalog:'Каталог — WINWOOD', product:'Товар — WINWOOD'};
+  var SFX = ' — макет магазина';
+  var titles = {home:'Главная' + SFX, catalog:'Каталог' + SFX, product:'Товар' + SFX};
   var first = true, last = '';
   function route(){
     var h = (location.hash || '').replace(/^#/, ''), parts = h.split('/'), page = parts[0];
@@ -781,10 +782,10 @@ input,select{font:inherit;color:inherit}
         $('s-ban').innerHTML = s.img ? '<img src="' + s.img + '" referrerpolicy="no-referrer" alt="' + esc(s.alt) + '">' : MOLD;
         $('s-text').textContent = s.t + ': товары появятся после загрузки выгрузки от поставщика. Нужен файл в Excel, CSV или YML. По нему настроим фильтры под характеристики раздела: ' + s.f + '. Фото баннера — ваше.';
       }
-      titles.catalog = (isP ? 'Французская ёлочка' : s.t) + ' — WINWOOD';
+      titles.catalog = (isP ? 'Французская ёлочка' : s.t) + SFX;
       applyFilters();
     }
-    if (page === 'product') { renderProduct(arg); titles.product = $('p-title').textContent + ' — WINWOOD'; }
+    if (page === 'product') { renderProduct(arg); titles.product = $('p-title').textContent + SFX; }
     document.title = titles[page];
     if (!first && h !== last) window.scrollTo(0, 0);
     if (page === 'home' && first){ if (reduce) pages.home.classList.add('is-in'); else requestAnimationFrame(function(){ pages.home.classList.add('is-in'); }); }
