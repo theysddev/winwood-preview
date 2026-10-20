@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Макет интернет-магазина</title>
+<title>ПаркетДекор — макет интернет-магазина</title>
 <meta name="description" content="Макет интернет-магазина: главная, каталог с фильтрами и карточка товара. Паркет собственного производства, ламинат, обои, краска, плинтус и молдинги.">
 <meta name="robots" content="noindex, nofollow">
-<meta property="og:title" content="Макет интернет-магазина">
+<meta property="og:title" content="ПаркетДекор — макет интернет-магазина">
 <meta property="og:description" content="Главная, каталог и карточка товара. Прототип для согласования.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://winwoodmsk.ru/image/catalog/image_new/galereja_rabot/1(16).jpg">
@@ -54,6 +54,9 @@ input,select{font:inherit;color:inherit}
 .b-head{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .2s ease}
 .b-head.scrolled{border-bottom-color:var(--line)}
 .b-row{display:flex;align-items:center;gap:16px;height:80px;padding:0 var(--gut)}
+/* временный текстовый логотип до фирменного */
+.wm{display:inline-flex;align-items:baseline;font-weight:700;font-size:22px;letter-spacing:-.02em;color:var(--ink);white-space:nowrap;flex:none}
+.wm span{color:var(--green)}
 .logo-ph{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 18px;border:1.5px dashed #9DB3A7;border-radius:10px;background:#F6F9F7;color:var(--green);font-weight:600;font-size:15px;white-space:nowrap;flex:none}
 .b-catbtn{display:inline-flex;align-items:center;gap:10px;height:50px;padding:0 20px;border-radius:10px;background:var(--green);color:#fff;font-weight:600;flex:none;transition:background-color .15s ease,transform .12s ease}
 .b-catbtn:active{transform:scale(.97)}
@@ -335,7 +338,7 @@ input,select{font:inherit;color:inherit}
   </div>
   <header class="b-head" data-head>
     <div class="b-row">
-      <a class="logo logo-ph" href="#home" aria-label="Логотип магазина, на главную">Логотип</a>
+      <a class="logo wm" href="#home" aria-label="ПаркетДекор, на главную">Паркет<span>Декор</span></a>
       <a class="b-catbtn" href="#catalog"><svg class="icon"><use href="#i-grid"/></svg><span class="lbl">Каталог</span></a>
       <form class="b-search" role="search" id="search">
         <label class="sr" for="q">Поиск по каталогу</label>
@@ -553,7 +556,7 @@ input,select{font:inherit;color:inherit}
 
   <footer class="foot">
     <div class="brand">
-      <span class="logo-ph">Логотип</span>
+      <span class="wm">Паркет<span>Декор</span></span>
       <a class="tel" href="tel:+79037475222">+7 (903) 747-52-22</a>
       <a class="muted" href="mailto:winwoodmsk@yandex.ru">winwoodmsk@yandex.ru</a>
     </div>
@@ -572,7 +575,7 @@ input,select{font:inherit;color:inherit}
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <nav class="switch" aria-label="Страницы макета">
-  <p class="note"><b>Макет интернет-магазина</b>Паркет — с вашего сайта, остальные разделы — после выгрузок поставщиков</p>
+  <p class="note"><b>Макет магазина ПаркетДекор</b>Паркет — с вашего сайта, остальные разделы — после выгрузок поставщиков</p>
   <div class="seg">
     <a href="#home" data-tab="home">Главная</a>
     <a href="#catalog" data-tab="catalog">Каталог</a>
@@ -761,7 +764,7 @@ input,select{font:inherit;color:inherit}
 
   // ---------- страницы ----------
   var pages = {home:$('p-home'), catalog:$('p-catalog'), product:$('p-product')};
-  var SFX = ' — макет магазина';
+  var SFX = ' — ПаркетДекор';
   var titles = {home:'Главная' + SFX, catalog:'Каталог' + SFX, product:'Товар' + SFX};
   var first = true, last = '';
   function route(){
